@@ -22,3 +22,11 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
       working-directory: ./grrs
+
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --verbose
+      working-directory: ./guessing-game
+    - name: Run tests
+      run: cargo test --verbose
+      working-directory: ./guessing-game
